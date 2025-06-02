@@ -1,0 +1,17 @@
+doctor-appointment-system/
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── db.php
+├── index.php                → Home page
+├── login.php                → Login form
+├── register.php             → Patient registration
+├── doctor_login.php         → Doctor login
+├── dashboard.php            → Patient dashboard (book, cancel)
+├── doctor_dashboard.php     → Doctor dashboard (view bookings)
+├── book_appointment.php     → Appointment form handler
+├── logout.php               → Logout logic
+├── create_tables.sql        → SQL to create tables
+└── assets/
+    └── (optional images/icons)
