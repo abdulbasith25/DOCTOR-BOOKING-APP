@@ -28,10 +28,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
 
+</head>
+<body>
 <form method="POST">
     <h2>Doctor Login</h2>
     <input type="email" name="email" placeholder="Email" required><br><br>
     <input type="password" name="password" placeholder="Password" required><br><br>
     <button type="submit">Login</button>
 </form>
+</body>
+</html>

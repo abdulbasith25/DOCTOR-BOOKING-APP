@@ -20,7 +20,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 <html>
 <head>
     <title>Patient Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Welcome to Patient Dashboard</h2>
@@ -45,7 +45,8 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
                     <form method="POST" action="book_appointment.php">
                         <input type="hidden" name="doctor_id" value="<?= $row['id'] ?>">
                         <label>Date:</label>
-                        <input type="date" name="date" required>
+                        <input type="date" name="date" value="<?= date('Y-m-d') ?>" required>
+
                         <label>Time:</label>
                         <input type="time" name="time" required>
                         <button type="submit">Book</button>
